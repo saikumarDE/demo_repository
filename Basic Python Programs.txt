@@ -1,0 +1,156 @@
+1).........................
+def fact(n):
+    if n<0:
+        return 0
+    elif (n==0 or n==1):
+        return 1
+    else:
+        fact=1
+        while(n>1):
+            fact*=n
+            n-=1
+        return fact
+n=4
+print("The factorial of",n,"is",fact(n))
+
+2).................................
+
+num = int(input("Enter a number: "))
+sum = 0
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit **3
+   temp //= 10
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
+
+3)..................................................
+
+def prime(x,y):
+    prime_list=[]
+    for i in range (x,y):
+        if i==0 or i==1 :
+            continue
+        else:
+             for j in range(2,int(i/2)+1):
+                     if i%j==0:
+                            break                           
+        
+             else:
+                  prime_list.append(i)
+    return prime_list
+
+starting_range = 1
+ending_range = 30
+lst = prime(starting_range, ending_range)
+if len(lst) == 0:
+    print("There are no prime numbers in this range")
+else:
+    print("The prime numbers in this range are: ", lst)
+
+4).........................................................
+def fibonacci(n):
+    a = 0
+    b = 1
+    if n < 0:
+        print("Incorrect input")
+    elif n == 0:
+        return a
+    elif n == 1:
+        return b
+    else:
+        for i in range(2, n):
+            c = a + b
+            a = b
+            b = c
+        return b
+ 
+print(fibonacci(10))
+
+5)........................................................
+
+num =int(input("enter a number:"))
+  
+if num > 1:
+  
+    
+    for i in range(2, int(num/2)+1):
+ 
+        if (num % i) == 0:
+            print(num, "is not a prime number")
+            break
+    else:
+        print(num, "is a prime number")
+  
+else:
+    print(num, "is not a prime number")
+
+6)........................................................
+class Points(object):
+  def __init__(self,x,y):
+
+    self.x=x
+    self.y=y
+
+  def print_point(self):
+
+    print('x=',self.x,' y=',self.y)
+
+p2=Points(1,2)
+
+p2.x=2
+
+p2.print_point()
+
+7).......................................................
+
+def sip_int(p,t,r):
+    sip_int=(p*t*r)/100
+    return sip_int
+sip_int(1200,2,3)
+
+8)........................................................
+def com_int(p,t,r):
+    amount=p*(pow((1+r/100),t))
+    com_int=amount-p
+    return com_int
+print("The result is",com_int(1200,2,5.4))
+
+9).........................................................
+def area(r):
+    pi=3.14
+    area=pi*r*r
+    return area
+r=6
+print("The area of cricle with radius",r,"is",area(r))
+
+10)...........................................................
+student_name = 'Arthur'
+marks = {'James': 90, 'Jules': 55, 'Arthur': 77}
+for student in marks:
+    if student==student_name:
+         print(marks[student])
+         break
+else:
+    print('No entry with that name found.')
+
+
+#####GC2FROJrPGQWF-yIM3LJg1qCsKTQYjsLgmuDpRu_vprc
+https://api.us-south.language-translator.watson.cloud.ibm.com/instances/46124928-e93b-49c6-ae52-0e46b18d2bca
+
+
+{
+  "apikey": "JkkJt_t_pufCG6mpfDJcna0lqBLymWn91XZBEp_CsuEB",
+  "iam_apikey_description": "Auto-generated for key crn:v1:bluemix:public:speech-to-text:eu-gb:a/c8a33eda1fa444d587a926ab2c9d89c6:1e251202-5589-4ff3-8099-2e85abcdb830:resource-key:688e985d-e9fe-468d-892c-27c65aecdb40",
+  "iam_apikey_name": "Auto-generated service credentials",
+  "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+  "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/c8a33eda1fa444d587a926ab2c9d89c6::serviceid:ServiceId-d8d79619-cacd-4d53-874f-a1c9a7d0f8f8",
+  "url": "https://api.eu-gb.speech-to-text.watson.cloud.ibm.com/instances/1e251202-5589-4ff3-8099-2e85abcdb830"
+}
+    
+   
+
+
